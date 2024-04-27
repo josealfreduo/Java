@@ -1,0 +1,41 @@
+package prova;
+import java.util.ArrayList;
+
+
+public class Turma {
+    private ArrayList<Aluno> pessoas = new ArrayList<Aluno>();
+    private String nomeTurma;
+	private Professor professor;
+    
+    public Turma(String nomeTurma, Professor teacher) {
+        this.nomeTurma = nomeTurma;
+        this.professor = teacher;
+    }
+
+    public void adicionarPessoa(Aluno p) {
+        pessoas.add(p);
+    }
+
+
+    public void adicionarProfessor(Professor p){
+
+        this.professor = p;
+
+    }
+
+    public void visualizarTurma(){
+        System.out.println("Composição da turma");
+        System.out.println("-----------------------------");
+        System.out.println("Nome da turma: "+this.nomeTurma);
+        System.out.println("Nome do professor: "+this.professor.getNome());
+
+        for (Aluno cadaUm : pessoas){
+            System.out.println("Nome: "+cadaUm.getNome()+" Idade: "+cadaUm.getIdade()+ " Nota " +cadaUm.getNota());
+
+        }
+
+
+    }
+
+    
+    }
