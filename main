@@ -1,0 +1,45 @@
+
+import prova.Aluno;
+import prova.Professor;
+import prova.Turma;
+
+public class Main {
+    
+public static void main(String[] args) {
+    
+Aluno estudante1 = new Aluno("joão", 10, 4.5);
+Aluno estudante2 = new Aluno("Guilherme", 10, 9.0);
+Aluno estudante3 = new Aluno("Alexandre", 10, 9.6);
+
+estudante1.setIdade(10);
+estudante1.setNome("João");
+estudante1.setNota(4.5);
+
+estudante2.setIdade(10);
+estudante2.setNome("Guilherme");
+estudante2.setNota(9.0);
+
+estudante3.setIdade(10);
+estudante3.setNome("Alexandre");
+estudante3.setNota(9.6);
+
+Professor teacher = new Professor (" Carlinhos", 50, 45.000);
+Turma turmaCompleta = new Turma(" Gurizes", teacher);
+
+turmaCompleta.adicionarPessoa(estudante1);
+turmaCompleta.adicionarPessoa(estudante2);
+turmaCompleta.adicionarPessoa(estudante3);
+
+turmaCompleta.adicionarProfessor(teacher);
+turmaCompleta.visualizarTurma();
+
+
+
+
+
+
+}
+
+
+
+}
